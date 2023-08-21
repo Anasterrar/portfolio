@@ -55,5 +55,45 @@ nav {
 }
 
 #mobile {
+    display: none;
+}
+
+#bars{
+    color: aliceblue;
+    align-items: center;
+}
+
+@media screen and (max-width:769px){
+    #navbarlink {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top:70px ;
+        right: -310px;
+        width: 300px;
+        height: 100vh;
+        background:rgb(76, 113, 113);
+        box-shadow: 0 40px 60px rgba(0,0,0,0.1);
+        padding: 40px 0 0 10px;
+        transition: 0.4s ease-in-out;
+    }
+
+    #navbarlink.active{
+        right: 0px;
+    }
+
+    #mobile {
+        display: block;
+    }
     
+    #navbarlink li{
+        margin-bottom: 25px;
+    }
+
+    #bars{
+        font-size: 24px;
+        cursor: pointer;
+    }
 }
