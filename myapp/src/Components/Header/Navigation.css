@@ -1,5 +1,5 @@
 
-  @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Caprasimo&family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Caprasimo&family=Lilita+One&display=swap');
 
 #logo-80 {
     width: 6rem;
@@ -10,8 +10,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     background-color: rgb(76, 113, 113);
-    padding: 20px 80px ;
-    box-shadow: ;                                                                                                                                                                                                                                                     
+    padding: 20px 80px ;                                                                                                                                                                                                                                                   
     height: 2rem;
     font-family: 'Bungee Shade', cursive;
     font-family: 'Caprasimo', cursive;
