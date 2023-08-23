@@ -1,14 +1,17 @@
 import React from 'react';
-import '../Homepage/Hompage.css';
+import '../Homepage/Homepage.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function Homepage() {
     return(
         <>
         <main>
-            
-        </main>
 
+
+
+
+
+        </main>
         </>
     );
 }
