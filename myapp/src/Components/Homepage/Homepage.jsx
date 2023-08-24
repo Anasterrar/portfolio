@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../Homepage/Homepage.css';
 import HomepageItem from './HomepageItem';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function Homepage() {
-
+    const [activeIndex, setActiveIndex] = useState(0);
     const items = [
 
         // 1
@@ -21,14 +21,29 @@ function Homepage() {
             icon: require("../../Media/cog-gear-machine-svgrepo-com.svg") ,
         },
 
-    ]
+    ];
     return(
-        <main className='carousel'>
-            <div className='inner'>
+       
+        <main>
+             <section className='carousel'>
+            <div className='inner'
+
+            style={{ transform: `translate:(-${activeIndex * 100})` }}>
+
                 {items.map((item) => {
                     return <HomepageItem item={item} />
                 })}
             </div>
+            <div className='Homepage-buttons'>
+               <button className='button-arrow'>
+                <span class="material-symbols-outlined">arrow_back_ios</span>
+               </button>
+               <div className='indicators'><span class="material-symbols-outlined"> <button className='indicator-button'></button> radio_button_checked</span></div>
+               <button className='button-arrow'>
+                <span class="material-symbols-outlined">arrow_forward_ios</span>
+                </button>
+            </div>
+            </section>
         </main>
     );
 }
