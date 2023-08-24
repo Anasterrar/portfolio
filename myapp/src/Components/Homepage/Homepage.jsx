@@ -9,7 +9,7 @@ function Homepage() {
 
         // 1
         {
-            description: "A man with a laptop",
+            description: "A man with a laptopyugkkkkkkkkkkkkkkk",
             icon: require("../../Media/man-technologist-medium-skin-tone-svgrepo-com.svg") ,
         },
         {
@@ -35,13 +35,25 @@ function Homepage() {
                 })}
             </div>
             <div className='Homepage-buttons'>
+
                <button className='button-arrow'>
                 <span class="material-symbols-outlined">arrow_back_ios</span>
                </button>
-               <div className='indicators'><span class="material-symbols-outlined"> <button className='indicator-button'></button> radio_button_checked</span></div>
+               
+               <div className='indicators'>
+                {items.map((item,index)=>{
+                    return(
+                        <button className='indicator-button'>
+                        <span class="material-symbols-outlined">radio_button_checked</span>
+                        </button> 
+                    );
+                })}
+                   
+                </div>
                <button className='button-arrow'>
                 <span class="material-symbols-outlined">arrow_forward_ios</span>
                 </button>
+
             </div>
             </section>
         </main>
