@@ -1,22 +1,21 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 
 main{
-    margin: 0;
-    font-family:"Roboto";
-    margin: 0;
-    justify-content:center ;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-    background-color: rgb(86, 86, 195);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-color: #2d4456;
 }
 
 .carousel{
     overflow: hidden;
-    width: 700px;
+    width:90rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border-radius: 10px;
 }
 
 .inner{
@@ -30,7 +29,7 @@ main{
 display: inline-flex;
 align-items: center;
 justify-content: center;
-height: 490px;
+height: 690px;
 background-color: aliceblue;
 
 }
@@ -65,4 +64,22 @@ padding: 0 20px 0 20px;
     justify-content: space-around;
     align-items: center;
     margin-top: 20px;
+}
+
+.indicator-button{
+    border: none;
+    cursor: pointer;
+}
+
+.indicators > button {
+    margin: 5px;
+    background: none;
+}
+
+.indicator-symbol {
+    color: black;
+}
+
+.indicator-symbol-active {
+    color: aliceblue;
 }

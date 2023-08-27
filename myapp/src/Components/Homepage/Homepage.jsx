@@ -5,52 +5,68 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function Homepage() {
     const [activeIndex, setActiveIndex] = useState(0);
+
     const items = [
 
         // 1
         {
-            description: "A man with a laptopyugkkkkkkkkkkkkkkk",
-            icon: require("../../Media/man-technologist-medium-skin-tone-svgrepo-com.svg") ,
+            description: "Louoirghiri rojhripohrih pçhrçphargeçç uh aàih rohiuhr oiahariuh oihiarh  oiahpiargh ouagh agoih aiagh oiuaghiagh igahagihag igah iagh aighagiohagiaghiga oiaghgaoihagigahoi agagi ",
+            icon: require("../../Media/backgroud/undraw_developer_activity_re_39tg.svg") ,
         },
         {
-            description: "Books",
-            icon: require("../../Media//books-svgrepo-com.svg") ,
+            description: "Louoirghiri rojhripohrih pçhrçphargeçç uh aàih rohiuhr oiahariuh oihiarh  oiahpiargh ouagh agoih aiagh oiuaghiagh igahagihag igah iagh aighagiohagiaghiga oiaghgaoihagigahoi agagi ",
+            icon: require("../../Media/backgroud/undraw_developer_activity_re_39tg.svg") ,
         },
         {
-            description: "Rogs",
-            icon: require("../../Media/cog-gear-machine-svgrepo-com.svg") ,
+            description: "Louoirghiri rojhripohrih pçhrçphargeçç uh aàih rohiuhr oiahariuh oihiarh  oiahpiargh ouagh agoih aiagh oiuaghiagh igahagihag igah iagh aighagiohagiaghiga oiaghgaoihagigahoi agagi ",
+            icon: require("../../Media/backgroud/undraw_developer_activity_re_39tg.svg") ,
         },
 
     ];
+
+    const updateIndex = (newIndex) => {
+        if (newIndex < 0) {
+          newIndex = 0;
+        } else if (newIndex >= items.length) {
+          newIndex = items.length - 1;
+        }
+    
+        setActiveIndex(newIndex);
+      };
     return(
        
         <main>
              <section className='carousel'>
             <div className='inner'
-
-            style={{ transform: `translate:(-${activeIndex * 100})` }}>
+            style={{ transform: `translate(-${activeIndex * 100}%)`}}>
 
                 {items.map((item) => {
-                    return <HomepageItem item={item} />
+                    return <HomepageItem item={item} width={"100%"} />
                 })}
             </div>
             <div className='Homepage-buttons'>
 
-               <button className='button-arrow'>
+               <button onClick={()=>{
+                updateIndex(activeIndex -1)
+               }} className='button-arrow'>
                 <span class="material-symbols-outlined">arrow_back_ios</span>
                </button>
                
                <div className='indicators'>
                 {items.map((item,index)=>{
                     return(
-                        <button className='indicator-button'>
-                        <span class="material-symbols-outlined">radio_button_checked</span>
+                        <button onClick={()=>{
+                            updateIndex(index)
+                           }} className='indicator-button'>
+                        <span className={`material-symbols-outlined ${index === activeIndex? "indicator-symbol-active": "indicator-symbol"}`}>radio_button_checked</span>
                         </button> 
                     );
                 })}
                    
                 </div>
-               <button className='button-arrow'>
+               <button onClick={()=>{
+                updateIndex(activeIndex + 1)
+               }} className='button-arrow'>
                 <span class="material-symbols-outlined">arrow_forward_ios</span>
                 </button>
 
