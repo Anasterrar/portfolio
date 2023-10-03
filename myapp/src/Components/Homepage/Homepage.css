@@ -19,7 +19,7 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-radius: 10px;
+  
 }
 
 .inner{
@@ -35,7 +35,7 @@ align-items: center;
 justify-content: center;
 height: 690px;
 background-color: aliceblue;
-
+border-radius: 10px;
 }
 
 .Hompage-img{
