@@ -10,16 +10,16 @@ function Homepage() {
 
         // 1
         {
-            description: "Louoirghiri rojhripohrih pçhrçphargeçç uh aàih rohiuhr oiahariuh oihiarh  oiahpiargh ouagh agoih aiagh oiuaghiagh igahagihag igah iagh aighagiohagiaghiga oiaghgaoihagigahoi agagi ",
+            description: "    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos perspiciatis, dolorum possimus necessitatibus laboriosam, est assumenda rem molestias fugit, vel odio magnam architecto. In optio omnis enim eligendi illo. Unde.",
             icon: require("../../Media/backgroud/undraw_developer_activity_re_39tg.svg") ,
         },
         {
-            description: "Louoirghiri rojhripohrih pçhrçphargeçç uh aàih rohiuhr oiahariuh oihiarh  oiahpiargh ouagh agoih aiagh oiuaghiagh igahagihag igah iagh aighagiohagiaghiga oiaghgaoihagigahoi agagi ",
-            icon: require("../../Media/backgroud/undraw_developer_activity_re_39tg.svg") ,
+            description: "    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos perspiciatis, dolorum possimus necessitatibus laboriosam, est assumenda rem molestias fugit, vel odio magnam architecto. In optio omnis enim eligendi illo. Unde.",
+            icon: require("../../Media/backgroud/undraw_programming_re_kg9v.svg") ,
         },
         {
-            description: "Louoirghiri rojhripohrih pçhrçphargeçç uh aàih rohiuhr oiahariuh oihiarh  oiahpiargh ouagh agoih aiagh oiuaghiagh igahagihag igah iagh aighagiohagiaghiga oiaghgaoihagigahoi agagi ",
-            icon: require("../../Media/backgroud/undraw_developer_activity_re_39tg.svg") ,
+            description: "    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos perspiciatis, dolorum possimus necessitatibus laboriosam, est assumenda rem molestias fugit, vel odio magnam architecto. In optio omnis enim eligendi illo. Unde.",
+            icon: require("../../Media/backgroud/undraw_static_website_re_x70h.svg") ,
         },
 
     ];
@@ -75,5 +75,7 @@ function Homepage() {
         </main>
     );
 }
+
+
 
 export default Homepage;
