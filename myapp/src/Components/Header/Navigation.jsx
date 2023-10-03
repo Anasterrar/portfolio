@@ -28,12 +28,12 @@ import { faBars,faTimes } from '@fortawesome/free-solid-svg-icons';
         <div>
             <ul id='navbarlink' className={this.state.clicked ? "#navbarlink active" : "#navbarlink"}>
                 <li> 
-                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <a className='active' href="http://" target="_blank" rel="noopener noreferrer">
                         Project
                     </a> 
                 </li>
                 <li>
-                    <a className='active' href="http://" target="_blank" rel="noopener noreferrer">
+                    <a  href="http://" target="_blank" rel="noopener noreferrer">
                         Home
                     </a> 
                 </li>
